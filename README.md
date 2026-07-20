@@ -1,17 +1,18 @@
 # QA Challenge - E-commerce Testing (Demoblaze)
 
 Este repositorio contiene la entrega del desafío técnico de QA, abarcando desde la planificación manual y el reporte de ejecución, hasta la suite de automatización de pruebas en Cypress.
+* Enunciado: https://docs.google.com/document/d/197baeqriQjACZuBybYN6Pg4DQGPt7y6eP9wnA0VcXyk/edit?usp=sharing
 
 
 🔗 Enlaces del Proyecto
 
-Tablero de Trello (Bug Lifecycle):** [Haz clic aquí para ver el tablero de Trello](https://trello.com/invite/b/6a5d53e7f85a3fe573bcbeda/ATTI1b9e62ef376d63e593029d4b78496d5649B19580/bug-lifecycle)[cite: 1]
-
+* Tablero de Trello (Bug Lifecycle): (https://trello.com/invite/b/6a5d53e7f85a3fe573bcbeda/ATTI1b9e62ef376d63e593029d4b78496d5649B19580/bug-lifecycle)
+* Matriz de Casos de Prueba y Reporte de Ejecución (Google Sheets):https://docs.google.com/spreadsheets/d/1BXcYJlOhwfDjEcZ6K7Znw-MFtCcLTA0j/edit?usp=sharing&ouid=116293294526897965027&rtpof=true&sd=true
+* 
 
 
 📁 Estructura del Repositorio
 
-* `/docs`: Contiene la matriz de Casos de Prueba y el **Test Run Report** en formato Excel.
 * `/cypress`: Carpeta con la suite de pruebas automatizadas E2E.
 * `package.json`: Configuración del proyecto y dependencias de Node.js/Cypress.
 
@@ -29,7 +30,7 @@ Para instalar y ejecutar esta suite de pruebas automatizadas en tu computadora n
 Abre una terminal en la raíz de este proyecto y ejecuta el siguiente comando para descargar e instalar Cypress y sus dependencias: npm install
 
 
-🖥️ Ejecución de las Pruebas AutomatizadasOpción: 
+ 🖥️ Ejecución de las Pruebas AutomatizadasOpción: 
 
 Interfaz Gráfica (Cypress Runner)Para abrir el panel interactivo de Cypress y ver la ejecución de los flujos paso a paso en tiempo real:  
 
@@ -41,7 +42,8 @@ Opción 2: Modo Consola (Headless)
 Para ejecutar las pruebas directamente en segundo plano desde la terminal:
 npm run cypress:run
 
-🐛 Defectos Destacados Encontrados (Bug Report)
+
+ 🐛 Defectos Destacados Encontrados (Bug Report)
 BUG-001 (Falta de Validación en Campos Numéricos): 
 
 El formulario de "Place Order" permite procesar y finalizar compras falsas aceptando caracteres inválidos (letras en el mes, números negativos en la tarjeta de crédito o año en cero). Este defecto fue documentado en Trello y se encuentra cubierto por la suite automatizada (el caso CP-009 fallará a propósito evidenciando este error).
