@@ -1,0 +1,29 @@
+{
+  "name": "product_store_testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": { 
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run --spec 'cypress/e2e/checkout_form.cy.js'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrealopez-tech/challenge_qa_demoblaze.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/andrealopez-tech/challenge_qa_demoblaze/issues"
+  },
+  "homepage": "https://github.com/andrealopez-tech/challenge_qa_demoblaze#readme",
+  "devDependencies": {
+    "cypress": "^15.18.1"
+  }
+}
